@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/frontendmentor-sign-up-form/static/css/main.d28be43c.css",
+    "main.js": "/frontendmentor-sign-up-form/static/js/main.4fce11ac.js",
+    "static/js/787.d38b7b1a.chunk.js": "/frontendmentor-sign-up-form/static/js/787.d38b7b1a.chunk.js",
+    "static/media/bg-intro-desktop.png": "/frontendmentor-sign-up-form/static/media/bg-intro-desktop.059183eea52640c5068d.png",
+    "index.html": "/frontendmentor-sign-up-form/index.html",
+    "static/media/icon-error.svg": "/frontendmentor-sign-up-form/static/media/icon-error.b72f792e9c900128f5c88f10a0d8d4b7.svg",
+    "main.d28be43c.css.map": "/frontendmentor-sign-up-form/static/css/main.d28be43c.css.map",
+    "main.4fce11ac.js.map": "/frontendmentor-sign-up-form/static/js/main.4fce11ac.js.map",
+    "787.d38b7b1a.chunk.js.map": "/frontendmentor-sign-up-form/static/js/787.d38b7b1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d28be43c.css",
+    "static/js/main.4fce11ac.js"
+  ]
+}
