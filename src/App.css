@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: hsl(0deg, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  background-image: url(./bg-intro-desktop.png);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container .sections {
+  display: flex;
+  justify-content: center;
+}
+.container .sections .section1 {
+  width: 75vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 50px;
+}
+.container .sections .section1 p {
+  font-size: 0.9rem;
+}
+.container .sections .section1 h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  padding: 0px 80px 0px 0px;
+  margin-bottom: 20px;
+}
+.container .sections .section2 {
+  width: 75vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .sections .section2 .tryit {
+  height: 45px;
+  width: 55vh;
+  color: white;
+  background-color: hsl(248deg, 32%, 49%);
+  border: 1px solid hsl(248deg, 32%, 49%);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 6px 0px rgba(0, 0, 0, 0.31);
+}
+.container .sections .section2 .tryit span {
+  font-weight: 600;
+}
+.container .sections .section2 .form {
+  background-color: white;
+  width: 55vh;
+  padding: 25px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+.container .sections .section2 .form .input {
+  width: 48vh;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  border-radius: 3px;
+}
+.container .sections .section2 .form .input input::-moz-placeholder {
+  font-weight: 600;
+}
+.container .sections .section2 .form .input input::placeholder {
+  font-weight: 600;
+}
+.container .sections .section2 .form .empty-input {
+  border: 2px solid hsl(0deg, 100%, 74%);
+}
+.container .sections .section2 .form .empty-input input::-moz-placeholder {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 600;
+}
+.container .sections .section2 .form .empty-input input::placeholder {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 600;
+}
+.container .sections .section2 .form .text {
+  width: 40vh;
+  height: 5vh;
+  border: 0px;
+  padding: 20px;
+  color: hsl(249deg, 10%, 26%);
+  font-weight: 600;
+}
+.container .sections .section2 .form .warning {
+  visibility: hidden;
+}
+.container .sections .section2 .form .empty-p {
+  visibility: visible;
+  font-size: 0.7rem;
+  color: hsl(0deg, 100%, 74%);
+  text-align: right;
+  padding: 5px;
+  font-style: italic;
+}
+.container .sections .section2 .form .empty-i {
+  visibility: visible;
+  vertical-align: middle;
+}
+.container .sections .section2 .form .terms {
+  color: hsl(246deg, 25%, 77%);
+  font-style: normal;
+  text-align: center;
+  font-size: 0.5rem;
+}
+.container .sections .section2 .form .terms span {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 800;
+}
+.container .sections .section2 .claim {
+  height: 45px;
+  width: 48vh;
+  color: white;
+  background-color: hsl(154deg, 59%, 51%);
+  border: 1px solid hsl(154deg, 59%, 51%);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0px 0px 5px 0px;
+  box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.57);
 }
 
-.App-link {
-  color: #61dafb;
+input:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input > div:active {
+  background-color: yellow;
 }
+
+button:hover {
+  cursor: pointer;
+}
+
+.claim:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 875px) {
+  .container {
+    height: 100%;
+  }
+  .sections {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .sections .section1 h1 {
+    font-size: 1.8rem !important;
+    text-align: center;
+    padding: 0px 30px 0px 30px !important;
+  }
+  .sections .section1 p {
+    text-align: center;
+    padding: 0px 30px 0px 30px !important;
+  }
+  .sections .section2 .tryit {
+    height: 70px !important;
+    width: 45vh !important;
+    color: white;
+    background-color: hsl(248deg, 32%, 49%);
+    border: 1px solid hsl(248deg, 32%, 49%);
+    padding: 20px 80px 20px 80px !important;
+    line-height: 1.5;
+  }
+  .sections .section2 .claim {
+    height: 50px !important;
+    width: 38vh !important;
+  }
+  .sections .section2 .form {
+    width: 45vh !important;
+  }
+  .sections .section2 .form .text {
+    width: 30vh !important;
+  }
+  .sections .section2 .form .input {
+    width: 38vh !important;
+  }
+}/*# sourceMappingURL=App.css.map */
